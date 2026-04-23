@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Contacto - MotoMarket</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | MotoMarket</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>MotoMarket</h1>
-  </header>
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">🏍️ MotoMarket</div>
 
-  <section class="contacto">
-    <h2>Contacto</h2>
+    <div class="search-box">
+        <input type="text" placeholder="Buscar repuestos...">
+        <button>Buscar</button>
+    </div>
+</header>
 
-    <form action="https://formspree.io/f/xkokkpbe" method="POST">
-      
-      <label>Nombre</label>
-      <input type="text" name="nombre" required>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li>Repuestos</li>
+        <li>Accesorios</li>
+        <li>Ofertas</li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
 
-      <label>Email</label>
-      <input type="email" name="email" required>
+<!-- CONTENEDOR -->
+<div class="container">
 
-      <label>Mensaje</label>
-      <textarea name="mensaje" rows="5" required></textarea>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h3>Categorías</h3>
+        <ul>
+            <li>Cascos</li>
+            <li>Aceites</li>
+            <li>Frenos</li>
+            <li>Baterías</li>
+            <li>Luces</li>
+            <li>Accesorios</li>
+        </ul>
+    </aside>
 
-      <button type="submit">Enviar</button>
-      
-    </form>
-  </section>
-  </body>
+    <!-- CONTENIDO CONTACTO -->
+    <main class="products">
+
+        <div class="card" style="max-width:500px; margin:auto;">
+            <h2>Contacto</h2>
+
+            <form action="https://formspree.io/f/xkokkpbe" method="POST">
+                
+                <label>Nombre</label>
+                <input type="text" name="nombre" required>
+
+                <label>Email</label>
+                <input type="email" name="email" required>
+
+                <label>Mensaje</label>
+                <textarea name="mensaje" rows="5" required></textarea>
+
+                <button type="submit" style="margin-top:10px;">Enviar</button>
+                
+            </form>
+        </div>
+
+    </main>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 MotoMarket</p>
+    <p>WhatsApp: 221-000-000</p>
+    <p>Instagram: @motomarket</p>
+</footer>
+
+</body>
 </html>
