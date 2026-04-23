@@ -281,3 +281,66 @@ form button:hover{
     max-width:500px;
     margin:auto;
 }
+
+.contact-card{
+    max-width:500px;
+    margin:auto;
+    grid-column: 1 / -1;   /*ocupa todo el ancho del grid */}
+
+/* FORMULARIO PRO */
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-top:20px;
+}
+
+/* contenedor icono + input */
+.input-group{
+    display:flex;
+    align-items:center;
+    background:#f8f8f8;
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:10px 15px;
+    transition:0.3s;
+}
+
+.input-group:focus-within{
+    border:1px solid #070371;
+    box-shadow:0 0 8px rgba(7,3,113,0.25);
+}
+
+.icon{
+    font-size:20px;
+    margin-right:10px;
+}
+
+/* inputs grandes */
+.input-group input{
+    border:none;
+    background:transparent;
+    width:100%;
+    font-size:16px;
+    padding:8px;
+}
+
+.input-group textarea{
+    border:none;
+    background:transparent;
+    width:100%;
+    font-size:16px;
+    padding:8px;
+    resize:none;
+}
+
+/* textarea más alta */
+.input-group.textarea{
+    align-items:flex-start;
+}
+
+.contact-form button{
+    margin-top:10px;
+    font-size:16px;
+}
