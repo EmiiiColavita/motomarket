@@ -232,3 +232,52 @@ body{
 .navbar a:hover{
     color:goldenrod;
 }
+
+/* FORMULARIO CONTACTO */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:15px;
+}
+
+form label{
+    font-weight:bold;
+}
+
+form input,
+form textarea{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+form input:focus,
+form textarea:focus{
+    outline:none;
+    border:1px solid #070371;
+    box-shadow:0 0 5px rgba(7,3,113,0.3);
+}
+
+form button{
+    background:#070371;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+form button:hover{
+    background:goldenrod;
+}
+
+/* TARJETA CONTACTO centrada */
+.contact-card{
+    max-width:500px;
+    margin:auto;
+}
